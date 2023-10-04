@@ -6,7 +6,7 @@ export default function NotFound() {
     <Flex
       flexDirection='column'
       justifyContent="center"
-      alignItems="center" 
+      alignItems="center"
       w="100%"
       h="100%"
     >
