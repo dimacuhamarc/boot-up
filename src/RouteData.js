@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound";
 
 const RouteData = [
   {
@@ -9,7 +10,7 @@ const RouteData = [
   },
   {
     path: "*",
-    component: () => <div>404</div>,
+    component: () => <NotFound />,
     exact: true
   },
   {

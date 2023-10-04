@@ -1,0 +1,27 @@
+.navbar {
+  background: #ffffffa0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  outline: #ffffffd0 1px solid;
+  top: 1.5rem;
+  left: 25%;
+  width: 50vw;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  
+
+  @media (max-width: 768px) {
+    left: 5%;
+    width: 90vw;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+  }
+}
