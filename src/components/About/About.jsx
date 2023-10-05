@@ -1,11 +1,11 @@
-import Partners from "../Partners";
 
 import {
+  Box,
+  chakra,
   Container,
   SimpleGrid,
   Image,
   Flex,
-  Divider,
   Heading,
   Text,
   Stack,
@@ -16,7 +16,6 @@ import {
 
 import { IoPersonAddSharp, IoBriefcase } from 'react-icons/io5';
 import { LuPresentation } from 'react-icons/lu';
-
 import { FaHammer, FaTree } from 'react-icons/fa';
 
 const Offers = ({ text, icon, iconBg }) => {
@@ -120,13 +119,105 @@ const AboutLandings = () => {
   );
 }
 
-const About = () => {
+const AboutLonger = () => {
   return (
-    <div>
-      <Divider />
-      <Partners />
-    </div>
+    <Box px={4} py={24} mx="auto">
+      <Box
+        w={{
+          base: 'full',
+          md: 11 / 12,
+          xl: 9 / 12,
+        }}
+        mx="auto"
+        textAlign={{
+          base: 'left',
+          md: 'center',
+        }}
+      >
+        <SimpleGrid width={"100%"} columns={{ base: 1}} spacing={6}>
+          <Box>
+            <chakra.h1
+            mb={6}
+            fontSize={{
+              base: '4xl',
+              md: '6xl',
+            }}
+            fontWeight="bold"
+            lineHeight="none"
+            letterSpacing={{
+              base: 'normal',
+              md: 'tight',
+            }}
+            color="gray.900"
+            _dark={{
+              color: 'gray.100',
+            }}
+          >
+            Who We Are
+            </chakra.h1>
+            <chakra.p
+              px={{
+                base: 0,
+                lg: 24,
+              }}
+              mb={6}
+              fontSize={{
+                base: 'lg',
+                md: 'xl',
+              }}
+              color="blackAlpha.700"
+              _dark={{
+                color: 'whiteAlpha.900',
+              }}
+              textAlign="justify"
+            >
+              At <chakra.p as="span" fontWeight={'bold'} bgClip="text" bgGradient="linear(to-r, purple.400,red.500)" >BootUP Philippines</chakra.p>, we are passionate about nurturing the entrepreneurial spirit and fostering innovation in the heart of the Philippines. We are your premier destination for startup workshops and incubation services, dedicated to helping aspiring entrepreneurs transform their ideas into successful businesses.
+            </chakra.p>
+          </Box> 
+          <Box> 
+            <chakra.h1
+              mb={6}
+              fontSize={{
+                base: '4xl',
+                md: '6xl',
+              }}
+              fontWeight="bold"
+              lineHeight="none"
+              letterSpacing={{
+                base: 'normal',
+                md: 'tight',
+              }}
+              color="gray.900"
+              _dark={{
+                color: 'gray.100',
+              }}
+            >
+              Our Mission
+            </chakra.h1>
+            <chakra.p
+              px={{
+                base: 0,
+                lg: 24,
+              }}
+              mb={6}
+              fontSize={{
+                base: 'lg',
+                md: 'xl',
+              }}
+              color="blackAlpha.700"
+              _dark={{
+                color: 'whiteAlpha.900',
+              }}
+              textAlign="justify"
+            >
+              Our mission is to empower the next generation of Filipino entrepreneurs by providing them with the knowledge, resources, and support they need to bring their startup dreams to life. We believe in the power of innovation to drive economic growth and create a brighter future for our nation.
+            </chakra.p>
+          </Box>  
+        </SimpleGrid>
+      </Box>
+    </Box>
   );
 }
 
-export { AboutLandings, About };
+
+export { AboutLandings, AboutLonger };

@@ -37,7 +37,7 @@ function PriceWrapper(props) {
   );
 }
 
-const Pricing = () => {
+const PricingComp = () => {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -240,4 +240,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default PricingComp;

@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import { About } from "./components/About/About";
+import About from "./pages/About";
+import Pricing from "./pages/Pricing";
 
 const RouteData = [
   {
@@ -22,6 +23,11 @@ const RouteData = [
   {
     path: "/contact",
     component: () => <div>Contact</div>,
+    exact: true
+  },
+  {
+    path: "/pricing",
+    component: () => <Pricing/>,
     exact: true
   }
 ];
