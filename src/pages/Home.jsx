@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials';
 import Statistics from '../components/Statistics';
 
 import { Fade } from 'react-awesome-reveal';
+import Newsletter from '../components/Newsletter';
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <Pricing />
       <Divider border="0.25px gray solid" />
       <Testimonials />
+      <Divider/>
+      <Newsletter />
       </Fade>
     </div>
   );

@@ -118,7 +118,7 @@ const Hero = () => {
                 size="lg"
                 cursor="pointer"
               >
-                <Link to="get-started">Get Started</Link>
+                <Link to="/">Get Started</Link>
                 <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fillRule="evenodd"

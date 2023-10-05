@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
 
 const RouteData = [
   {
@@ -22,12 +23,12 @@ const RouteData = [
   },
   {
     path: "/contact",
-    component: () => <div>Contact</div>,
+    component: () => <Contact />,
     exact: true
   },
   {
     path: "/pricing",
-    component: () => <Pricing/>,
+    component: () => <Pricing />,
     exact: true
   }
 ];
