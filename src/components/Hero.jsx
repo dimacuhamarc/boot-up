@@ -1,6 +1,7 @@
 import { Box, Text, chakra, Button, Icon, Image, HStack } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import heroImg from '../assets/img/hero.svg';
+import { Fade } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
@@ -11,6 +12,7 @@ const Hero = () => {
           md: '0',
         }
       } left="25%" zIndex="-1" src={heroImg} height="50vw" />
+        <Fade triggerOnce>
         <Box
           w={{
             base: 'full',
@@ -128,6 +130,7 @@ const Hero = () => {
             </Link>
           </HStack>
         </Box>
+        </Fade>
       </Box>
     </div>
   );
