@@ -1,6 +1,7 @@
 import React from "react";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import { About } from "./components/About/About";
 
 const RouteData = [
   {
@@ -15,7 +16,7 @@ const RouteData = [
   },
   {
     path: "/about",
-    component: () => <div>About</div>,
+    component: () => <About />,
     exact: true
   },
   {

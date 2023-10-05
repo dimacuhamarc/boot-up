@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 import { Text, Flex, Hide, Button, ButtonGroup } from '@chakra-ui/react';
+import { RiHome7Fill } from 'react-icons/ri';
 
 export default function Navbar() {
 
@@ -44,9 +45,15 @@ export default function Navbar() {
         }}
       >
         <ButtonGroup gap='1'>
-          <Link  to='/'><Button isActive={location.pathname === '/' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost">Home</Button></Link>
-          <Link to='about'><Button isActive={location.pathname === '/about' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost">About</Button></Link>
-          <Link to='contact'><Button isActive={location.pathname === '/contact' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost">Contact Us</Button></Link>
+          <Link  to='/'>
+            <Button isActive={location.pathname === '/' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost"><RiHome7Fill/></Button>
+          </Link>
+          <Link to='about'>
+            <Button isActive={location.pathname === '/about' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost">About</Button>
+          </Link>
+          <Link to='contact'>
+            <Button isActive={location.pathname === '/contact' ? 'true' : ''} borderRadius='3xl' colorScheme='blackAlpha' variant="ghost">Contact Us</Button>
+          </Link>
         </ButtonGroup>
       </Flex>
     </div>
