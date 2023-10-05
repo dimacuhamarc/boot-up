@@ -58,6 +58,7 @@ const TestimonialCard = (props) => {
         width={'full'}
         rounded={'2xl'}
         p={10}
+        marginBottom={12}
         justifyContent={'flex-start'}
         alignItems={'flex-start'}
         backdropFilter='blur(4px)'
@@ -118,7 +119,6 @@ const Testimonials = () => {
         justifyContent="center"
         alignItems="center"
         gap={6}
-
         px={12}
       >
         {TestimonialData.map((testimonial, index) => (

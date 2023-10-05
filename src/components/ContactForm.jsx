@@ -42,7 +42,7 @@ export default function ContactForm() {
           borderRadius="2xl"
           p={{ sm: 5, md: 5, lg: 16 }}>
           <WrapItem textAlign="center">
-            <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+            <Box paddingTop="4rem" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
               <Heading>Contact</Heading>
               <Text color="gray.500">
                 We will get back to you as soon as possible. We promise!
